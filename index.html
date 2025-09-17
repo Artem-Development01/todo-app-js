@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Todo List - Free Task Management App</title>
+    <meta
+      name="description"
+      content="Smart Todo List - simple and convenient web application
+      for task organization, time management and productivity improvement.
+      Create tasks, set deadlines, filter by status."
+    />
+    <meta
+      name="keywords"
+      content="task manager, todo list, task management, to-do-list,
+      time organization, productivity, tasks, planner"
+    />
+    <meta name="author" content="Artem" />
+    <meta property="og:title" content="Smart Todo List - Organize Your Tasks" />
+    <meta
+      property="og:description"
+      content="Simple and convenient task management app with deadline setting"
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="todo-app" aria-label="Task management application">
+      <header class="todo-app-header" role="banner">
+        <h1>Smart Todo List</h1>
+        <p>Organize your tasks efficiently</p>
+      </header>
+      <section
+        class="add-new-task-section"
+        id="addSection"
+        aria-labelledby="new-task-heading"
+      >
+        <h2 id="new-task-heading">Add New Task</h2>
+
+        <input
+          class="field-new-text"
+          id="inputText"
+          type="text"
+          placeholder="Enter your task description"
+          aria-label="new task input field"
+        />
+
+        <div class="checkbox-group" role="group">
+          <input
+            id="checkbox"
+            type="checkbox"
+            aria-label="mark to activate date and time fields"
+          />
+          <input
+            id="inputDate"
+            type="datetime-local"
+            disabled
+            aria-label="set date and time"
+          />
+        </div>
+        <button id="addButton" type="button" aria-label="add a new task">
+          Add New Task
+        </button>
+      </section>
+
+      <section
+        class="filter-tasks-section"
+        id="filterSection"
+        aria-labelledby="filter-heading"
+      >
+        <h2 id="filter-heading">Task Filters</h2>
+        <div class="filter-buttons" role="group" aria-label="Task list filters">
+          <button id="allBtn" type="button" aria-label="all">All Tasks</button>
+          <button id="activeBtn" type="button" aria-label="active">
+            Active
+          </button>
+          <button id="completedBtn" type="button" aria-label="completed">
+            Completed
+          </button>
+        </div>
+        <button
+          class="button-sort"
+          id="sortBtn"
+          type="button"
+          aria-label="sort"
+        >
+          Sort
+        </button>
+      </section>
+      <section
+        class="tasks-section"
+        id="tasksSection"
+        aria-labelledby="tasks-heading"
+      >
+        <h2 id="tasks-heading">My Tasks</h2>
+
+        <div class="tasks-container">
+          <div id="empty-state" aria-live="polite">
+            <p id="spanMessage" class="span-message">
+              No tasks yet. Add your first task!
+            </p>
+          </div>
+          <ul id="ul" aria-label="Task list"></ul>
+        </div>
+      </section>
+    </main>
+    <footer role="contentinfo">
+      <p>Smart Todo List &copy; 2025. All rights reserved.</p>
+    </footer>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
