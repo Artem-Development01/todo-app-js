@@ -67,10 +67,6 @@ text
 - Clean code separation
 - 7-day intensive development cycle
 
-## 📄 License
 
-MIT License - feel free to learn from and adapt this code.
-
----
 
 *Smart Todo List • Created by Artem • 2025*
