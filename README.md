@@ -21,20 +21,15 @@ This todo list application focuses on modular architecture and user experience.
 - Full keyboard accessibility
 - Responsive mobile-first design
 
-## 🚀 Quick Start
+## 🚀 Usage
 
-1. **Clone the repository**
-https://artem-development01.github.io/todo-app-js/
+**Web version**: https://artem-development01.github.io/todo-app-js/
 
-text
-
-2. **Open in browser**
-- Directly open index.html
-- Or use Live Server in VS Code
-
-3. **Use the application**
-- Mouse/touch input
-- Keyboard navigation support
+**Local development**:
+```bash
+git clone https://github.com/artem-development01/todo-app-js.git
+open index.html
+```
 
 ## 🛠 Tech Stack
 
